@@ -1,6 +1,13 @@
 package main
 
+import (
+	"fmt"
+
+	_ "github.com/xz11552/golang/Ticket/DB_Helper"
+)
+
 func main() {
 	ticketsss := ticket
-	updateTicket(1, 99)
+	num := updateTicket(1, 99)
+	fmt.Println(num)
 }
